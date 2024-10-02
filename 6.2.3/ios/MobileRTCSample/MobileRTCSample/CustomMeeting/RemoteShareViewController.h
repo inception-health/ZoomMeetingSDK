@@ -1,0 +1,21 @@
+//
+//  RemoteShareViewController.h
+//  MobileRTCSample
+//
+//  Created by Zoom Video Communications on 27/11/2017.
+//  Copyright © 2017 Zoom Video Communications, Inc. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface RemoteShareViewController : UIViewController
+
+@property (assign, nonatomic) NSUInteger activeShareID;
+
+@property (nonatomic, strong) MobileRTCShareAction *shareAction;
+@property (strong, nonatomic) MobileRTCActiveShareView* shareView;
+
+- (void)updateShareView;
+- (void)stopShareView;
+
+@end
